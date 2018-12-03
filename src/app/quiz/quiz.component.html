@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 sub-title text-center">
+      <h4>Quiz</h4>
+      <div class="h-line"></div>
+    </div>
+  </div>
+  <div class="row" *ngIf="mode === 'terms'">
+    <div class="col-12">
+      <div class="text-center">
+      <h4>Terms & Conditions</h4>
+      </div>
+      <ul *ngFor="let rule of rules">
+          <li >{{rule}}</li>
+      </ul>
+    </div>
+    <div class="col-12">
+      <div class="action-block text-center">
+      <mat-form-field>
+        <mat-select [(ngModel)]="config.type" placeholder="Quiz Type">
+          <mat-option *ngFor="let quizType of quizTypes" [value]="quizType.type">
+            {{quizType.type}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select [(ngModel)]="config.duration" placeholder="Duration">
+          <mat-option *ngFor="let timeFrame of timeFrames" [value]="timeFrame.duration">
+            {{timeFrame.durationType}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button [disabled]="config.type ==='' || config.duration === 0" (click)="startQuiz()" mat-button>Start Quiz</button>
+    </div>
+  </div>
+  </div>
+  <div *ngIf="mode === 'quiz'">
+    <div *ngIf="config.duration" class="badge badge-info text-center"><span>Time: {{ellapsedTime}} / {{duration}}</span></div>
+    <div class="row">
+      <div class="col-md-10">
+        <div *ngFor="let question of quiz; let index = index" class="questionContainer">
+          <div class="font-weight-normal">{{index + 1}}. {{question.name}}</div>
+          <div class="row text-left options">
+            <div class="col-6" *ngFor="let option of question.options">
+              <label class="font-weight-normal" [attr.for]="option.id">
+                <input id="{{option.id}}" type="checkbox" [(ngModel)]="option.selected" (change)="onSelect(question, option);" /> {{option.name}}
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 sticky">
+        <div class="cursor-pointer" *ngFor="let question of quiz; let index = index;">
+          <div class="p-2 mb-2 {{ isAnswered(question) == 'Answered'? 'bg-info': 'bg-warning' }}">{{index + 1}}. {{ isAnswered(question) }}</div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="onSubmit();">Submit</button>
+  </div>
+  <div class="result" *ngIf="mode === 'result'">
+    <h4 class="text-center">Quiz Result</h4>  
+    <h4 class="alert alert-info text-center">Great!! Keep Going, All the best</h4>
+    <div *ngFor="let question of quiz; let index = index" class="questionContainer">
+      <div>{{index + 1}}. {{question.name}}</div>
+      <div class="row" class="row text-left options">
+        <div class="col-6" *ngFor="let Option of question.options">
+          <input id="{{Option.id}}" type="checkbox" [(ngModel)]="Option.selected" disabled="disabled"/> <span class="optionName">{{Option.name}}</span>
+        </div>
+      </div>
+      <div class="p-1 m-2 alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">
+        <span *ngIf="isCorrect(question) === 'correct';else wrong">
+          <b>Your Answer is Correct</b>
+        </span>
+        <ng-template #wrong>
+          <span *ngFor="let Option of question.options"><span *ngIf="Option.isAnswer">
+            <b>Correct Answer: {{Option.name}}</b>
+          </span>
+          </span>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</div>

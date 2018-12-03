@@ -1,0 +1,147 @@
+<div class="container">
+  <mat-tab-group  #tabGroup (selectedIndexChange)="loadDynamicContent($event)"> 
+
+    <!--PROJECT SOP BEGINS-->
+    <mat-tab label="PROJECT SOP">
+      <div class="container">
+       <div class="row">
+           <div class="col-12 sub-title text-center">
+             <h4>STANDARD OPERATING PROCEDURE</h4>
+             <div class="h-line"></div>
+           </div>
+         </div>
+       </div> 
+
+       <mat-form-field class="gridSearch">
+           <input matInput (keyup)="applyprojectsfilter($event.target.value)" placeholder="Search by any Word">
+         </mat-form-field>
+
+         <div class="mat-elevation-z8">
+            <mat-paginator #projectpaginator
+             [pageSize]="10"
+             [pageSizeOptions]="[1, 2, 3, 5, 10, 25, 50]"
+             showFirstLastButtons>
+             </mat-paginator>
+
+           <table mat-table #sortDate="matSort" [dataSource]="projecttabledataSource" matSort>
+             
+           
+          
+         
+           
+             <ng-container matColumnDef="Feature">
+               <th mat-header-cell *matHeaderCellDef mat-sort-header> Description </th>
+               <!-- <td mat-cell *matCellDef="let element"> {{element.description}} </td> -->
+               <td mat-cell *matCellDef="let element"><div [innerHTML]=element.description></div> </td>
+               
+             </ng-container>
+
+           <ng-container matColumnDef="Category">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
+             <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+             <!-- <td mat-cell *matCellDef="let element"><div [innerHTML]=element.category></div></td> -->
+           </ng-container>
+
+        
+
+
+           <ng-container matColumnDef="Subcategory">
+             <th mat-header-cell *matHeaderCellDef mat-sort-header> SubCategory </th>
+             <td mat-cell *matCellDef="let element"> {{element.subcategory}} </td>
+             <!-- <td mat-cell *matCellDef="let element"><div [innerHTML]=element.category></div></td> -->
+           </ng-container>
+
+
+        
+
+           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+           <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;" ></tr> -->
+           <!-- <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="{'highlight': selectedRowIndex == row.id}"(click)="highlight(row)" ></tr> -->
+           <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+         </table>
+
+       </div>
+
+   </mat-tab> 
+
+
+    <mat-tab label="PROJECT ADMIN">
+    <div class="container">
+      <h2 class="page-header">Project Management Portal</h2>
+      
+      <form (submit) = "addsop()">
+        <div class="form-group">
+          <label>Category</label>
+          <input type="text" [(ngModel)]="category" name= "category" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Sub Category</label>
+          <input type="text" [(ngModel)]="subcategory" name= "subcategory" class="form-control">
+        </div>
+        
+        <div class="form-group">
+            <label>Description</label>
+            <textarea  [(ngModel)]="description" name= "description" class="form-control" rows="7"></textarea>
+        </div>
+        <input type="submit" class="btn btn btn-success" value="Add">
+        
+      </form>
+    </div>  
+  <hr>
+  
+  <div class="container">
+    <div class="row" *ngFor = "let sop of sops">
+        
+        <div class="col-lg-3 firstName">
+            {{sop.category}}
+          </div>
+      
+        <div class="col-lg-3 lastName">
+          {{sop.subcategory}}
+        </div>
+        <div class="col-md-3 displayData" [innerHTML]=sop.description>        
+        </div>
+        <div>
+          <input type="button" (click)="deleteSop(sop._id)" value= "Delete" class="btn btn-danger">
+          <input type="button" (click)="updateSop(sop._id)" value="update" class="btn btn-danger">
+        </div>
+        <br><br>
+    </div>
+    
+  </div>
+  </mat-tab>
+
+
+
+
+          <mat-tab label="PROJECT SOP">
+            <div class="container">
+             <div class="row">
+                 <div class="col-12 sub-title text-center">
+                   <h4>STANDARD OPERATING PROCEDURE</h4>
+                   <div class="h-line"></div>
+                 </div>
+               </div>
+             </div> 
+
+          <div class="form-ckeditor">
+               
+            <!-- <ckeditor [(ngModel)]="mainContent" [config]="config"></ckeditor> 
+            HTML code:
+            <textarea style="width:100%;height:200px;">{{mainContent}}</textarea>  -->
+             <!-- <div class="outputHtmlText" [innerHTML]="mainContent"></div> -->
+            <!-- <textarea style="width:100%;height:200px;">{{mainContent}}</textarea> -->
+            <!-- <div class="outputHtmlText" [innerHTML]="mainContent"></div> -->
+        </div>
+</mat-tab>
+
+<!--PROJECT SOP  ENDS-->
+
+    </mat-tab-group>
+  </div>
+
+
+  
+ 
+
