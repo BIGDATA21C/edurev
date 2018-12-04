@@ -1,0 +1,61 @@
+<div class="container news-container">
+    <div class="row">
+        <div class="col-12 sub-title text-center">
+          <h4>Courses</h4>
+          <div class="h-line"></div>
+          <div class="padding10"><strong>Total Courses - 13</strong></div>
+        </div>
+      </div>
+      <div class="row">
+          <div *ngFor="let item of data" class="col-md-3">
+            <div (click)="cardClick($event, item)" data-target="#detailModal" data-toggle="modal" class="card">
+                <img src="../assets/images/{{item.image}}.jpg" class="banner-img" alt="item.brand_name" />
+                <div class="p-3 card-content">
+                  <h5>{{item.courseName}}</h5>
+                  <p>{{item.courseType}}</p>
+                  <p class="sub-header" *ngIf="item.duration">
+                    <b>Duration: </b>
+                    <i>{{item.duration}}</i>
+                  </p>
+                  <hr class="card-hr" />
+                  <div class="row pt-1">
+                    <div class="col-5">
+                      <p *ngIf="item.offerPercent" class="text-center offer-text">{{item.offerPercent}}%</p>
+                    </div>
+                    <div class="col-7 card-footer-content">
+                      <p *ngIf="item.courseFee" class="text-right">
+                          <span *ngIf="item.offerPercent"><i class="fa fa-inr" aria-hidden="true"></i> {{item.courseFee}} </span>
+                      </p>
+                      <p class="text-right">
+                        <i class="fa fa-inr" aria-hidden="true"></i> {{item.courseFee-(item.courseFee*item.offerPercent/100)}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>  
+
+  <ng-template #courseDetails let-c="close" let-d="dismiss">
+    <div class="modal-header text-center">
+      <h4>{{courseData.courseName}}</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="container">
+        <div class="text-center course-info">
+          {{courseData.expertFaculty}} | {{courseData.duration}} | Rs.{{courseData.courseFee}}
+        </div>
+        <p>{{courseData.description}}</p>
+        <ul><li *ngFor="let item of courseData.subDescription">{{item}}</li></ul>
+          
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="action-item text-center">
+            <a target="_blank" href="https://www.instamojo.com/@insightiasacademydelhi" mat-button>Pay Now</a>
+      </div>
+    </div>
+  </ng-template>

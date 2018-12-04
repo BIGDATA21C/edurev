@@ -1,0 +1,115 @@
+<ngb-carousel interval="3000">
+  <ng-template ngbSlide>
+    <img class="reduce-opacity" src="../assets/images/content1.jpg" alt="Random first slide">
+  </ng-template>
+  <ng-template ngbSlide>
+    <img class="reduce-opacity" src="../assets/images/content2.jpg" alt="Random second slide">
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="../assets/images/image2.jpg" alt="Random third slide">
+    <div class="carousel-caption">
+      <p>Insight IAS your door towards making your dreams a reality. Fly high with 100% commitment towards accomplishment of goals</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+          <h5 class="text-center pt-5 card-title"> Featured Courses </h5>
+          <div class="h-line"></div>
+        </div>
+      </div>
+      <div class="row pb-5 pt-4 justify-content">
+        <div class="row">
+          <div *ngFor="let item of data" class="col-md-3">
+            <div (click)="cardClick($event, item)" data-target="#detailModal" data-toggle="modal" class="card">
+                <img src="../assets/images/{{item.image}}.jpg" class="banner-img" alt="item.brand_name" />
+                <div class="p-3 card-content">
+                  <h5>{{item.courseName}}</h5>
+                  <p>{{item.courseType}}</p>
+                  <p class="sub-header" *ngIf="item.duration">
+                    <b>Duration: </b>
+                    <i>{{item.duration}}</i>
+                  </p>
+                  <hr class="card-hr" />
+                  <div class="row pt-1">
+                    <div class="col-5">
+                      <p *ngIf="item.offerPercent" class="text-center offer-text">{{item.offerPercent}}%</p>
+                    </div>
+                    <div class="col-7 card-footer-content">
+                      <p *ngIf="item.courseFee" class="text-right">
+                        <i class="fa fa-inr" aria-hidden="true"></i> Rs {{item.courseFee}}
+                      </p>
+                      <p class="text-right">
+                        <i class="fa fa-inr" aria-hidden="true"></i> Rs {{item.courseFee-(item.courseFee*item.offerPercent/100)}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+<div class="text-center">
+  <div class="action-item">
+      <button [routerLink]="['/courses']" mat-button>View All Courses</button>
+  </div>
+</div>
+<div class="advantages">
+    <h5 class="text-center pt-5 card-title"> Advantages/ Acheivements </h5>
+    <div class="h-line"></div>
+    <div class="row advantage-block">
+        <div class="col-md-6 content">
+          <h5 class="text-center">Trained by experts </h5>
+          <p>The typical paradigm for classical conditioning involves repeatedly pairing an unconditioned stimulus (which unfailingly evokes a reflexive response) with another previously neutral stimulus (which does not normally evoke the response). Following conditioning, the response occurs both to the unconditioned stimulus and to the other, unrelated stimulus (now referred to as the "conditioned stimulus").</p>
+        </div>
+        <div class="col-md-6">
+            <img src="../assets/images/test1.jpg" class="banner-img" alt="item.brand_name" />
+            <div class="right-block"><img src="../assets/images/test2.jpg" class="banner-img" alt="item.brand_name" /> </div>
+        </div>
+    </div>
+    <div class="row advantage-block">
+        <div class="col-md-6">
+            <img src="../assets/images/test1.jpg" class="banner-img" alt="item.brand_name" />
+           <div class="right-block"> <img src="../assets/images/test2.jpg" class="banner-img" alt="item.brand_name" />
+        </div>
+        </div>
+        <div class="col-md-6 content">
+          <h5 class="text-center">Documentation Support </h5>
+          <p>The response to the conditioned stimulus is termed a conditioned response. The classic example is Ivan Pavlov and his dogs. Pavlov fed his dogs meat powder, which naturally made the dogs salivate—salivating is a reflexive response to the meat powder. Meat powder is the unconditioned stimulus (US) and the salivation is the unconditioned response (UR).</p>
+        </div>
+    </div>
+    <div class="row advantage-block">
+        <div class="col-md-6 content">
+          <h5 class="text-center">Trained by experts </h5>
+          <p>The typical paradigm for classical conditioning involves repeatedly pairing an unconditioned stimulus (which unfailingly evokes a reflexive response) with another previously neutral stimulus (which does not normally evoke the response). Following conditioning, the response occurs both to the unconditioned stimulus and to the other, unrelated stimulus (now referred to as the "conditioned stimulus").</p>
+        </div>
+        <div class="col-md-6">
+            <img src="../assets/images/test1.jpg" class="banner-img" alt="item.brand_name" />
+            <div class="right-block"><img src="../assets/images/test2.jpg" class="banner-img" alt="item.brand_name" /> </div>
+        </div>
+    </div>
+</div>
+<ng-template #courseDetails let-c="close" let-d="dismiss">
+  <div class="modal-header text-center">
+    <h4>{{courseData.courseName}}</h4>
+    <a class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </a>
+  </div>
+  <div class="modal-body">
+    <div class="container">
+      <div class="text-center course-info">
+        {{courseData.expertFaculty}} | {{courseData.duration}} | Rs.{{courseData.courseFee}}
+      </div>
+      <p>{{courseData.description}}</p>
+      <ul><li *ngFor="let item of courseData.subDescription">{{item}}</li></ul>
+        
+      </div>
+  </div>
+  <div class="modal-footer">
+      <div class="action-item text-center">
+          <button mat-button>Subscribe Now</button>
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,63 @@
+.left-sidebar{
+    float:left;
+    background-color: #f1f1f1;
+    margin-left: -12px;
+}
+.left-sidebar li ul {
+    padding-left: 0;
+}
+.left-sidebar li ul li{
+    padding-left:40px !important;
+}
+ul li ul li:last-child{
+    border-bottom: 0 !important;
+}
+.left-sidebar-container {
+    width: 20%;
+}
+.left-sidebar ul li {
+    border-bottom: 1px dotted #bbb;
+    display: block;
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.left-sidebar{
+    margin-right:20px;
+}
+li.historyTopic.hasChildrens>a:before{
+    content:url('/assets/images/icon-plus.png');
+    float:right;
+    width:10%;
+    position: relative; 
+    left:5px;   
+}
+li.historyTopic.open ul li {
+    padding-left: 40px !important;
+    float:left;
+}
+li.historyTopic.open ul li:first-child{
+    border-top: 1px dotted #bbb;
+}
+li.historyTopic.hasChildrens.open>a:before{
+    content:url('/assets/images/icon-minus.png');
+    bottom: 5px;
+}
+li.historyTopic.hasChildrens {
+    padding-right: 0 !important;
+}
+li.historyTopic.hasChildrens.open>a+ul{
+    display: block;
+}
+li.historyTopic.hasChildrens>a>span{
+    float:left;
+    width:90%;
+}li.historyTopic.hasChildrens>a+ul{
+    display: none;
+}
+li.historyTopic.hasChildrens.open>a {
+    font-weight: 600;
+}
+li.historyTopic.hasChildrens.open ul li a span {
+    font-size: 14px !important;
+}

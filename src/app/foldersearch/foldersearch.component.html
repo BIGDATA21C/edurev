@@ -1,0 +1,63 @@
+<div class="container">
+
+  <mat-tab-group  #tabGroup (selectedIndexChange)="loadDynamicContent($event)"> 
+
+<!--FOLDERS AND FILES BEGINS-->
+       <mat-tab label="IND ALT">
+             <div class="container">
+              <div class="row">
+                  <div class="col-12 sub-title text-center">
+                    <h4>IND ALTERNATIVES </h4>
+                    <div class="h-line"></div>
+                  </div>
+                </div>
+              </div> 
+
+              <mat-form-field class="gridSearch">
+                  <input matInput (keyup)="applygsFilter($event.target.value)" placeholder="Search by any Word">
+                </mat-form-field>
+
+                <div class="mat-elevation-z8">
+                   <mat-paginator #gspaginator
+                    [pageSize]="10"
+                    [pageSizeOptions]="[5, 10, 20]"
+                    showFirstLastButtons>
+                    </mat-paginator>
+
+                  <table mat-table #sortCol1gs="matSort" [dataSource]="gstabledataSource" matSort>
+                    
+                  
+                  <ng-container matColumnDef="Folder">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Folder </th>
+                    <!-- <td mat-cell *matCellDef="let element"> {{element.Question}} </td> -->
+                    <td mat-cell *matCellDef="let element"><div [innerHTML]=element.Folder></div> </td>
+                  </ng-container>
+                
+                  
+                  <ng-container matColumnDef="File">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> File </th>
+                    <!-- <td mat-cell *matCellDef="let element"> {{element.Year}} </td> -->
+                    <td mat-cell *matCellDef="let element"><div [innerHTML]=element.File></div></td>
+                  </ng-container>
+                
+               
+                
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;" ></tr>
+                </table>
+                
+              
+              </div>
+
+          </mat-tab> 
+<!--FOLDERS AND FILES ENDS-->
+
+
+
+    </mat-tab-group>
+  </div>
+
+
+  
+ 
+
