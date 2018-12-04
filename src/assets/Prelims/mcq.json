@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1010,
+        "name": "In India, other than ensuring that public funds are used efficientl",
+        "qstatements":"1. CAG exercises exchequer control on behalf of the Parliament when the President of India declares national emergency/financial emergency&&&2. CAG reports on the execution of projects or programmes by the ministries are discussed by the Public Accounts Committee&&&3. Information from CAG reports can be used by investigating agencies to press charges against those who have violated the law while managing public finances.&&&4. While dealing with the audit and accounting of government companies, CAG has certain judicial powers for prosecuting those who violate the law",
+        "statements":[
+            {"statement":"1. CAG exercises exchequer control on behalf of the Parliament when the President of India declares national emergency/financial emergency"},
+            {"statement":"2. CAG reports on the execution of projects or programmes by the ministries are discussed by the Public Accounts Committee"},
+            {"statement":"3. Information from CAG reports can be used by investigating agencies to press charges against those who have violated the law while managing public finances"},
+            {"statement":"4. While dealing with the audit and accounting of government companies, CAG has certain judicial powers for prosecuting those who violate the law"}
+        ],
+        "question":"Which of the statements given above is/are correct?",
+        "alloptions":"&&&(a) 1 and 2 only&&&(b) 2 only&&&(c) 3 only&&&(d) 1, 2 and 3&&&&&&",
+       
+        "questionTypeId": 1,
+        "options": [
+            {
+                "id": 1055,
+                "questionId": 1010,
+                "name": "(a) 1 and 2 only",
+                "isAnswer": false
+            },
+            {
+                "id": 1056,
+                "questionId": 1010,
+                "name": "(b) 2 only",
+                "isAnswer": true,
+                
+                "Explanation":"<p>The IRNSS is being developed parallel to the GAGAN (GPS Aided GEO Augmented Satellite Navigation) program, the ISRO SBAS (Satellite Based Augmentation System) version of an overlay system for GNSS signal corrections.</p><p>The IRNSS system consists of a constellation of seven satellites and a supporting ground segment. Three of the satellites in the constellation will be placed in a geostationary orbit and the remaining four in a geosynchronous inclined orbit of 29&ordm; relative to the equatorial plane. Such an arrangement would mean all seven satellites would have continuous radio visibility with Indian control stations. It will cover the entire country and an area extending about 1,500 sq. km beyond its border, with a position accuracy better than 20m in all weather conditions.</p>"
+            
+            },
+            {
+                "id": 1057,
+                "questionId": 1010,
+                "name": "(c) 3 only",
+                "isAnswer": false
+            },
+            {
+                "id": 1058,
+                "questionId": 1010,
+                "name": "(d) 1, 2 and 3",
+                "isAnswer": false
+            }
+        ],
+        "questionType": {
+            "id": 1,
+            "name": "Multiple Choice",
+            "isActive": true
+        }
+    },
+    {
+        "id": 1014,
+        "name":"Which of the following statements best describes 'carbon fertilization'?",
+        "qstatements":"",
+        "statements":[
+            {"statement":"1. IRNSS has three satellites in geostationary and four satellites in geosynchronous orbits"},
+            {"statement":"2. IRNSS covers entire India and about 5500 sq. km beyond its borders"},
+            {"statement":"3. India will have its own satellite navigation system with full global coverage by the middle of 2019"}
+        ],
+        "question":"",
+        "alloptions":"(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere&&&(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere&&&(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere&&&(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+    
+        "questionTypeId": 1,
+        "options": [
+            {
+                "id": 1055,
+                "questionId": 1012,
+                "name": "(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1057,
+                "questionId": 1012,
+                "name": "(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1056,
+                "questionId": 1012,
+                "name": "(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": true
+            },
+            {
+                "id": 1058,
+                "questionId": 1012,
+                "name": "(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            }
+        ],
+        "questionType": {
+            "id": 1,
+            "name": "Multiple Choice",
+            "isActive": true
+        }
+    },
+    {
+        "id": 1014,
+        "name":"<h3></h3><h1><b><span style='font-size: 11.0pt;color: black;'>Q. With reference to the Indian Regional Navigation Satellite System (IRNSS), consider the following statements :</span></b><span style='font-size: 11.0pt;color: black;'></span></h1><h1><span style='font-size: 11.0pt;color: black;'>1. IRNSS has three satellites in geostationary and four satellites in geosynchronous orbits. <br/> 2. IRNSS covers entire India and about 5500 sq. km beyond its borders. <br/> 3. India will have its own satellite navigation system with full global coverage by the middle of 2019.</span></h1><h1><b><span style='font-size: 11.0pt;color: black;'>Which of the statements given above is/are correct?</span></b><span style='font-size: 11.0pt;color: black;'></span></h1><h1><br/></h1>",
+        "qstatements":"",
+        "statements":"",
+        "questionTypeId": 1,
+        "options": [
+            {
+                "id": 1055,
+                "questionId": 1012,
+                "name": "(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1057,
+                "questionId": 1012,
+                "name": "(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1056,
+                "questionId": 1012,
+                "name": "(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": true
+            },
+            {
+                "id": 1058,
+                "questionId": 1012,
+                "name": "(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            }
+        ],
+        "questionType": {
+            "id": 1,
+            "name": "Multiple Choice",
+            "isActive": true
+        }
+    },
+    {
+        "id": 1014,
+        "name":"Which of the following statements best describes 'carbon fertilization'?",
+        "qstatements":"",
+        "statements":[
+            {"statement":"1. IRNSS has three satellites in geostationary and four satellites in geosynchronous orbits"},
+            {"statement":"2. IRNSS covers entire India and about 5500 sq. km beyond its borders"},
+            {"statement":"3. India will have its own satellite navigation system with full global coverage by the middle of 2019"}
+        ],
+        "question":"",
+        "alloptions":"(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere&&&(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere&&&(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere&&&(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+    
+        "questionTypeId": 1,
+        "options": [
+            {
+                "id": 1055,
+                "questionId": 1012,
+                "name": "(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1057,
+                "questionId": 1012,
+                "name": "(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1056,
+                "questionId": 1012,
+                "name": "(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": true
+            },
+            {
+                "id": 1058,
+                "questionId": 1012,
+                "name": "(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            }
+        ],
+        "questionType": {
+            "id": 1,
+            "name": "Multiple Choice",
+            "isActive": true
+        }
+    },
+    {
+        "id": 1015,
+        "name":"<h3></h3><h1><b><span style='font-size: 11.0pt;color: black;'></span></b></h1><p style='text-align: left;'><b><span style='font-size: 11.0pt;color: black;'></span></b></p><h5><b>3. With reference to the Genetically Modified mustard (GM mustard) developed in India, consider the following statements :</b></h5><div style='text-align: justify;'>1. GM mustard has the genes of a soil bacterium that give the plant the property of pest-resistance to a wide variety of pests. </div><div style='text-align: justify;'>2. GM mustard has the genes that allow the plant cross-pollination and hybridization. </div><div style='text-align: justify;'>3. GM mustard has been developed jointly by the IARI and Punjab Agricultural University. </div><div style='text-align: justify;'><br/></div><div style='text-align: justify;'>Which of the statements given above is/are correct ?</div><div style='text-align: justify;'><br/></div><h1 style='text-align: justify;'><br/></h1>",
+        "qstatements":"",
+        "statements":"",
+        "questionTypeId": 1,
+        "options": [
+            {
+                "id": 1055,
+                "questionId": 1012,
+                "name": "(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1057,
+                "questionId": 1012,
+                "name": "(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1056,
+                "questionId": 1012,
+                "name": "(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": true
+            },
+            {
+                "id": 1058,
+                "questionId": 1012,
+                "name": "(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            }
+        ],
+        "questionType": {
+            "id": 1,
+            "name": "Multiple Choice",
+            "isActive": true
+        }
+    },
+    {
+        "id": 1015,
+        "name":"<p><span style=\"font-family:Verdana,Geneva,sans-serif\"><strong>3. With reference to the Genetically Modified mustard (GM mustard) developed in India, consider the following statements :</strong></span></p><p><span style=\"font-family:Verdana,Geneva,sans-serif\">1. GM mustard has the genes of a soil bacterium that give the plant the property of pest-resistance to a wide variety of pests.&nbsp;<br />2. GM mustard has the genes that allow the plant cross-pollination and hybridization.&nbsp;<br />3. GM mustard has been developed jointly by the IARI and Punjab Agricultural University.&nbsp;<br /><br /><strong>Which of the statements given above is/are correct ?&nbsp;</strong><br />",
+        "alloptions":"&nbsp;&nbsp;<br />(a)1 and 3 only&nbsp;<br />(b)2 only&nbsp;<br />(c)2 and 3 only&nbsp;<br />(d)1, 2 and 3</span></p>",
+        "qstatements":"",
+        "statements":"",
+        "questionTypeId": 1,
+        "options": [
+            {
+                "id": 1055,
+                "questionId": 1012,
+                "name": "(a) Increased plant growth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1057,
+                "questionId": 1012,
+                "name": "(b) Increased temperature of Earth due to increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            },
+            {
+                "id": 1056,
+                "questionId": 1012,
+                "name": "(c) Increased acidity of oceans as a result of increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": true
+            },
+            {
+                "id": 1058,
+                "questionId": 1012,
+                "name": "(d) Adaptation of all living beings on Earth to the climate change brought about hr the increased concentration of carbon dioxide in the atmosphere",
+                "isAnswer": false
+            }
+        ],
+        "questionType": {
+            "id": 1,
+            "name": "Multiple Choice",
+            "isActive": true
+        }
+    }
+    	
+
+]

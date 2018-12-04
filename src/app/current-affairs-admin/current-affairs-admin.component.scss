@@ -1,0 +1,23 @@
+.ckeditor-container {
+    position: relative;
+    width: 80%;
+    margin: 25px auto;
+}
+.ck.ck-editor__main>div {
+    min-height: 200px !important;
+}
+mat-form-field{
+    width:100%;
+    float:left;
+}
+.ck.ck-editor {
+    float: left !important;
+    width: 100%;
+}
+.form-ckeditor{
+    width:100%;
+    float:left;
+}
+.ckeditor-container .form-group button.btn.btn-primary {
+    margin-top: 20px;
+}

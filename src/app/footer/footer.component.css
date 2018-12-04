@@ -1,0 +1,57 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+footer .bgCol{
+    /* background-color: rgb(127, 20, 22); */
+    /* background: #333; */
+    background: #3f51b5;
+    color:#fff
+}
+footer .copyRightBg{
+    /* background-color: rgb(127, 20, 22); */
+    background: #3f51b5;
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+footer .grayCol{
+    color:#e6dddd
+}
+footer p{
+    color: #FFF; 
+    font-weight: bold; 
+    border-bottom: 1px solid #c7c7c7; 
+    padding:10px 0px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+footer a{
+    cursor: pointer;
+}
+footer ul{
+    list-style: none;
+    color: #e6dddd;
+    padding: 0
+}
+.footer-menu{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.footer-menu a{
+    color:#FFF;
+    letter-spacing: 3px;
+    text-decoration:none;
+    font-size:14px;
+}
+.footer-menu li a:hover{
+    color: #f55c4d;
+    -webkit-transition: all ease-in-out;
+    -moz-transition: all ease-in-out;
+    -o-transition: all ease-in-out;
+    transition: all ease-in-out;
+}
+ul.footer-menu>li {
+    float: left;
+    width: 30%;
+}
