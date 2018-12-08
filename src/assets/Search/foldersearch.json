@@ -1,0 +1,119 @@
+[
+	
+	{
+		"file":"E:\\OrganizationData\\Git\\GitFundamentals",
+		"content":"Some Important Git Commands"
+	},
+	{
+		"file":"E:\\OrganizationData\\Requirements",
+		"content":"Project requirements"
+	},
+	{
+		"file":"E:\\OrganizationData\\DBInsert",
+		"content":"How to use Socket IO"
+	},
+	{
+		"file":"E:\\OrganizationData\\MongoDB\\MongodbCommands",
+		"content":"1.How To Import and Export a MongoDB Database on Ubuntu 14.04?"
+	},
+	{
+		"file":"E:\\OrganizationData\\MongoDB\\MongodbCommands",
+		"content":"2.How to install MongoDB on Digital ocean Ubuntu server?"
+	},
+	{
+		"file":"E:\\OrganizationData\\MongoDB\\MongodbCommands",
+		"content":"3.Migrate mongodb database from localhost to remote servers"
+	},
+	{
+		"file":"E:\\OrganizationData\\MongoDB\\MongodbCommands",
+		"content":"4. MongoDB Dump Commands"
+	},
+	{
+		"file":"E:\\OrganizationData\\MongoDB\\userList",
+		"content":"MongoDB Dump for userList Database"
+	},
+	{
+		"file":"E:\\OrganizationData\\HostingACloud",
+		"content":"Hosting in Digital Ocean"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"1. A To Z List of Linux Commands "
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"2. Date and Calendar"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"3. Compare Lines"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"4. Search Commands"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"5. Show the contents of the page?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"6. How to Merge Files?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"7. How to see network information?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"8. How to sort a file"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"9. How to edit a file?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"10. How to check different versions?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"11. How to check different IP Addresses?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"12. How to list files?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"13. How to remove files?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"14. How to set a password?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"15. How to see disk space?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"16. How to install packages?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"17. How to change the permissions of files?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"18. How to know information about hostname and IP address?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"19. How to stop processes?"
+	},
+	{
+		"file":"E:\\OrganizationData\\OS\\LinuxCommands",
+		"content":"20. What are Important Linux Commands?"
+	}
+]
